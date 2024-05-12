@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        td{
+            border: 5pt solid rgb(0, 0, 0);
+            text-align: center;
+        }
+        table{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #PlayerID{
+            height: 50%;
+            width: 5%;
+            
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="JS/ScriptThatDoesEverything.js"></script>
+</head>
+<body>
+    <h1 id="Status">I think, this is your turn</h1><br>
+
+    <h2 id="TurnNumber">Turn: 1</h2><br>
+    <h1 id="Role">Waiting</h1><br>
+    Match <input type="text" id="Match"><br>
+    Resources: <h2 id="Resources"></h2>
+    PlayerID <input type="text" id="PlayerID"><br>
+    Move <input type="text" id="moves"> Tiles <br>
+    Unit ID <input type="text" id="CardID"><br>
+    Use/Place Unit PosX <input type="text" id="PosX"><br>
+    Use/Place Unit PosY <input type="text" id="PosY"><br>
+    Attack PosX <input type="text" id="TargetPosX"><br>
+    Attack PosY <input type="text" id="TargetPosY"><br>
+    <input type="submit" onclick="Move()" value="Move an Unit"><br>
+    <input type="submit" onclick="Place()" value="Place"><br>
+    <input type="submit" onclick="Attack()" value="Attack"><br>
+    <input type="submit" onclick="Endturn()" value="End Your Turn"><br>
+    <table width="50%" HEIGHT="50%">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td >3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+</body>
+</html>
